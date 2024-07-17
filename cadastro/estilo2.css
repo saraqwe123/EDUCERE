@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    list-style: none;
+}
+
+:root {
+    --branca: #ffffff;
+    --preta: #000000;
+    --cinza: #e2ebf9;
+    --cinza_medio: #cfe0fa;
+    --cinza_escuro: #5c5f64;
+    --azul: #39536d;
+    --vermelha: rgb(165, 10, 10);
+}
+
+body {
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--cinza_medio);
+    color: var(--preta);
+    overflow: hidden;
+    display: grid;
+}
+
+header {
+    width: 99vw;
+    height: 15vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: 1px solid var(--cinza_escuro);
+    margin: 0.5%;
+    background-color: var(--cinza);
+
+}
+
+.top {
+    margin-left: 5%;
+}
+
+.container {
+    width: 100vw;
+    height: 85vh;
+    display: grid;
+    grid-template-areas:
+        "dois tres tres"
+        "meio meio meio"
+        "form form form"
+        "informacoes informacoes fotos";
+    grid-template-columns: 1fr 1fr 1fr;
+    /* Duas colunas com largura igual */
+
+
+}
+
+#dois {
+    grid-area: dois;
+    border: 1px solid var(--cinza_escuro);
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    background-color: var(--cinza);
+    width: 40%;
+    height: 80%;
+    margin-left: 2%;
+    text-align: center;
+}
+
+#tres {
+    grid-area: tres;
+    border: 1px solid var(--cinza_escuro);
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    background-color: var(--cinza);
+    width: 20%;
+    height: 80%;
+    margin-left: -29%;
+    text-align: center;
+}
+
+.meio {
+    position: relative;
+    bottom: 30%;
+    height: 40%;
+    grid-area: meio;
+    text-align: center;
+    font-size: 25px;
+    margin: 0.5%;
+    border: 1px solid var(--cinza_escuro);
+    background-color: var(--cinza);
+    padding: 11px;
+}
+
+form {
+    position: relative;
+    bottom: 90%;
+    grid-area: form;
+    margin: 0.5%;
+    border: 1px solid var(--cinza_escuro);
+    background-color: var(--cinza);
+
+
+    grid-template-columns: 1fr 1fr;
+    /* Duas colunas com largura igual */
+}
+
+.informacoes {
+    position: relative;
+    bottom: 15%;
+    width: 190%;
+    height:85%;
+    margin: 1.5%;
+    background-color: var(--cinza);
+    border: 1px solid var(--cinza_escuro);
+    display: flex;  
+    flex-direction: row;
+}
+
+#preencher {
+    border: 0;
+    width: 90%;
+    height: 0%;
+    padding: 10px; 
+    box-sizing: border-box;
+    position: relative;
+    bottom: -0.05%;
+}
+
+#preencher input {
+    margin-bottom: 10px;
+    padding: 0.5%;
+    width: 35%;
+}
+
+#preencher label {
+    display: block; 
+}
+
+#descricao {
+    position: relative;
+    top: -0.5%;
+    left: -25%;
+    height: 0%;
+    border: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+#descricao input {
+    padding: 60%;
+    width: 80%;
+}
+
+#label1 { grid-area: label1; }
+#label2 { grid-area: label2; }
+#label3 { grid-area: label3; }
+#label4 { grid-area: label4; }
+#label5 { grid-area: label5; }
+#label6 { grid-area: label6; }
+#ilocal { grid-area: ilocal; }
+#idescricao { grid-area: idescricao;}
+#imarca { grid-area: imarca; }
+#idata { grid-area: idata; }
+#ivalor { grid-area: ivalor; }
+#ienergia { grid-area: ienergia; }
+
+
+
+.fotos {
+    grid-area: fotos;
+    position: relative;
+    bottom: 15%;
+    height: 90%;
+    width: 90%;
+    background-color: var(--cinza);
+    border: 1px solid var(--cinza_escuro);
+}
+
+
+.conteudo {
+    border-radius: 3px;
+    position: relative;
+    bottom:75vh;
+    left: 29vw;
+    height: 40vh;
+    width: 40vw;
+    background-color: var(--azul);
+    color: var(--branca);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.botao_verifica {
+    padding:2%;
+    border-radius: 10px;
+    width: 30%;
+    margin-top: 5%;
+    color: var(--branca);
+    background-color: var(--cinza_escuro);
+}
+
+.conteudo input {
+    padding: 2%;
+}
+
+:hover.botao_verifica {
+    color: var(--cinza);
+    background-color: var(--preta);
+}
+
